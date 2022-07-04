@@ -24,7 +24,7 @@ func Database(connString string) {
 		db.LogMode(false)
 	}
 	//默认不加复数
-	db.SingularTable(true)
+	db.SingularTable(false)
 	//设置连接池
 	//空闲
 	db.DB().SetMaxIdleConns(20)

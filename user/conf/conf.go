@@ -17,6 +17,12 @@ var (
 )
 
 func Init() {
+	//f, _ := exec.LookPath(os.Args[0])
+	//p, _ := filepath.Abs(f)
+	//index := strings.LastIndex(p, string(os.PathSeparator))
+	//p = p[:index]
+
+	//file, err := ini.Load(p+"/conf/config.ini")
 	file, err := ini.Load("./conf/config.ini")
 	if err != nil {
 		fmt.Println("配置文件读取错误，请检查文件路径:", err)
